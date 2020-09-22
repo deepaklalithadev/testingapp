@@ -1,0 +1,14 @@
+{% extends 'stocker/base.html' %}
+    {% block body %}
+    {% load static %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<input type="text" name="name" id="name" placeholder="name">
+<input type="text" name="district" id="district" placeholder="district">
+<input type="text" name="taluka" id="taluka" placeholder="taluka">
+<input type="text" name="incharge" id="incharge" placeholder="incharge">
+<input type="text" name="mobile" id="mobile" placeholder="mobile">
+<input type="file" name="photo" id="photo" >
+<input type="submit" name="" id="" >
+</form>
+    {% endblock %}

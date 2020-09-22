@@ -1,0 +1,9 @@
+{% extends 'stocker/base.html' %}
+    {% block body %}
+    {% load static %}
+
+
+{% for nursery in nursery_list %}
+<h1 >{{nursery}}</h1><a href={{nursery.id}}>Edit</a><br>
+{% endfor %}
+    {% endblock %}

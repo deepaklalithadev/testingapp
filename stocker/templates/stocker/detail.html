@@ -1,0 +1,10 @@
+{% extends 'stocker/base.html' %}
+    {% block body %}
+    {% load static %}
+<h1>{{target}}</h1><br>
+<h3>District: {{target.district}}</h3><br>
+<h3>Taluka: {{target.taluka}}</h3><br>
+<h3>Incharge: {{target.incharge}}</h3><br>
+<h3>Mobile: {{target.mobile}}</h3><br>
+<img src="{{target.photo.url}}" width="100" height="100">
+    {% endblock %}
